@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class PasswordHelper {
     public static String generatePassword(int length) {
-        if (length < 8) {
+        if (length < 8 || length > 16) {
             length = 8;
         }
 
